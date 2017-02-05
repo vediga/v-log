@@ -1,7 +1,3 @@
-module.exports = {
-	log: function (msg) {
-  		console.log(msg);
-	}
-};
+let lm = require('./src/logMethods.js');
 
-
+module.exports = lm;

@@ -10,6 +10,13 @@
     "logger",
     "logging utility"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vediga/v-log.git"
+  },
   "author": "Vikas Ediga",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dateformat": "2.0.0"
+  }
 }
