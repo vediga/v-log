@@ -1,0 +1,15 @@
+{
+  "name": "v-log",
+  "version": "0.0.1",
+  "description": "A simple logging utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "logger",
+    "logging utility"
+  ],
+  "author": "Vikas Ediga",
+  "license": "MIT"
+}
