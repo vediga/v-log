@@ -2,7 +2,7 @@
 let dm = require('./dateMethods.js');
 
 function info (msg) {
-    console.info(`[${dm.getPrettyDateAndTime()}][INFO] ${msg}`);
+    console.info(`[${dm.getPrettyDateAndTime()}][   INFO] ${msg}`);
 }
 
 function success (msg) {
@@ -14,7 +14,7 @@ function warning (msg) {
 }
 
 function error (msg) {
-    console.error(`[${dm.getPrettyDateAndTime()}][ERROR] ${msg}`);
+    console.error(`[${dm.getPrettyDateAndTime()}][  ERROR] ${msg}`);
 }
 
 module.exports = {
