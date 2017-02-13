@@ -4,7 +4,8 @@
   "description": "A simple logging utility",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js > ./dist/v-log.js --standalone vlog"
   },
   "keywords": [
     "logger",
@@ -18,5 +19,8 @@
   "license": "MIT",
   "dependencies": {
     "dateformat": "2.0.0"
+  },
+  "devDependencies": {
+    "browserify": "14.0.0"
   }
 }
