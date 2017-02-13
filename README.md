@@ -13,7 +13,7 @@ A simple javascript logging utility.
 ```javascript
   let vlog = require('v-log');
 
-  vlog.error("Invalid request");          // [Sun Feb 05 2017 15:24:38]  [ERROR] Invalid request
+  vlog.error("Invalid request");          // [Sun Feb 05 2017 15:24:38][ERROR]   Invalid request
   vlog.warning("Session timed out");      // [Sun Feb 06 2017 13:24:28][WARNING] Session timed out
   vlog.info("Starting up the app");       // prints nothing as default log level is warning
   vlog.verbose("Successfully logged in"); // prints nothing as default log level is warning
@@ -28,14 +28,14 @@ being least logging level and debug being highest level.
 Default log level is warning which means any log message above warning i.e info, verbose or debug
 will be ignored.
 
-But you can change the log level as below:
+You can change the log level as below:
 
 ```javascript
-  vlog.logLevel = "info";
+  vlog.setLevel("debug");
 
-  vlog.error("Invalid request");          // [Sun Feb 05 2017 15:24:38]  [ERROR] Invalid request
+  vlog.error("Invalid request");          // [Sun Feb 05 2017 15:24:38][ERROR]   Invalid request
   vlog.warning("Session timed out");      // [Sun Feb 06 2017 13:24:28][WARNING] Session timed out
-  vlog.info("Starting up the app");       // [Sun Feb 07 2017 11:24:28]   [INFO] Starting up the app
-  vlog.verbose("Successfully logged in"); // prints nothing as default log level is info
-  vlog.debug("Navigating to checkout");   // prints nothing as default log level is info
+  vlog.info("Starting up the app");       // [Sun Feb 07 2017 11:24:28][INFO]    Starting up the app
+  vlog.verbose("Successfully logged in"); // [Sun Feb 07 2017 11:24:28][VERBOSE] Successfully logged in
+  vlog.debug("Navigating to checkout");   // [Sun Feb 07 2017 11:24:28][DEBUG]   Navigating to checkout
 ```
